@@ -8,8 +8,10 @@ namespace DeckOfCards
 {
     class Players : InitialDeck
     {
+        //Store player cards in queue
         public Queue<string> playarray = new Queue<string>();
 
+        //Method to sort Array
         public void SortArray(Queue<string> playarray)
         {
             Console.WriteLine(" ----------DISPLAYING DECK FOR PLAYER AFTER SORTING----------");
@@ -22,6 +24,7 @@ namespace DeckOfCards
 
         }
 
+        //Store cards for player 1
         public void player1()
         {
             int index = 1;
@@ -42,6 +45,7 @@ namespace DeckOfCards
             Console.WriteLine("\n");
 
         }
+        //Store cards for player 2
         void player2()
         {
             int index = 1;
@@ -62,6 +66,7 @@ namespace DeckOfCards
             Console.WriteLine("\n");
 
         }
+        //Store cards for player 3
         void player3()
         {
             int index = 1;
@@ -83,6 +88,7 @@ namespace DeckOfCards
             Console.WriteLine("\n");
 
         }
+        //Store cards for player 4
         void player4()
         {
             int index = 1;
@@ -103,6 +109,7 @@ namespace DeckOfCards
             Console.WriteLine("\n");
 
         }
+        //Method that creates objects for 4 players
         public static void MaintainPlayers()
         {
             Players players1 = new Players();

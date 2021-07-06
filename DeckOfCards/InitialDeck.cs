@@ -28,16 +28,10 @@ namespace DeckOfCards
         {
             //Method call to initialize a deck
             InitializeDeck();
-
-
-
             //Method to shuffle and distribute cards
             ShuffleDeck.ShufflingDeck();
+            //Create players object
             Players.MaintainPlayers();
-
-
-
-
 
         }
     }
