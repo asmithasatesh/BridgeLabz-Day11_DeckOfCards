@@ -4,10 +4,15 @@ using System.Text;
 
 namespace DeckOfCards
 {
+    /// <summary>
+    /// Day11- Program 8 and program 9 Executed using queue to shuffle a deck of cards and distribute 9 cards to 4 players
+    /// </summary>
+    /// <seealso cref="DeckOfCards.InitialDeck" />
     class ShuffleDeck : InitialDeck
     {
         public static void ShufflingDeck()
         {
+            //Shuffling deck based on Random method
             int i;
             Random random = new Random();
             for (i = 0; i < totalCards; i++)
@@ -17,26 +22,10 @@ namespace DeckOfCards
 
             }
 
-            //Console.WriteLine("\n  ***************DISPLAYING DECK AFTER SHUFFLE***************");
-            //string[,] distributeDeck = new string[9, 4];
-            //for (i = 0; i < 9; i++)
-            //{
-
-            //    for (j = 0; j < 4; j++)
-            //    {
-            //        Console.WriteLine("PLAYER -> {0}", j + 1);
-            //        distributeDeck[i, j] = deck[index];
-            //        Console.WriteLine("CARD -> Card {0}", distributeDeck[i, j]);
-            //        index++;
-            //    }
-            //    Console.WriteLine("\n");
-
-
-            //}
         }
         static string[] SwapCharacters(string[] array, int position1, int position2)
         {
-
+            //Swap two index in array
             string temp = array[position1];
             array[position1] = array[position2];
             array[position2] = temp;
