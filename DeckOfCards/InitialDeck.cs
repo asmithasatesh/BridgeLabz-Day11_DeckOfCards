@@ -7,7 +7,7 @@ namespace DeckOfCards
         //Declaring static variables
         public static String[] suit = { "Clubs", "Diamonds", "Hearts", "Spades" };
 
-        public static String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "Jack", "Queen", "King", "Ace" };
+        public static String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9","10","Jack", "Queen", "King", "Ace" };
 
         public static int totalCards = suit.Length * ranks.Length;
         public static String[] deck = new String[totalCards];
